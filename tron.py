@@ -8,7 +8,7 @@ Exercises
 4. How would you create a computer player?
 """
 
-from turtle import *
+from turtle import update, ontimer, setup, hideturtle, tracer, lis, onkey, don
 
 from freegames import square, vector
 
@@ -54,10 +54,10 @@ def draw():
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
-listen()
+lis()
 onkey(lambda: p1aim.rotate(90), 'a')
 onkey(lambda: p1aim.rotate(-90), 'd')
 onkey(lambda: p2aim.rotate(90), 'j')
 onkey(lambda: p2aim.rotate(-90), 'l')
 draw()
-done()
+don()
